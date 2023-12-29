@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* general */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header */
+header {
+  /* background: url(assets/gym-video.mp4); */
+  /* position: absolute; */
+  padding: 25px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.orange {
+  color: #ed563a;
+}
+video {
+  width: 100%;
+  /* position: fixed; */
+}
+.flex li {
+  padding: 10px;
+  font-size: 10px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
+}
+.btn {
+  border: none;
+  background-color: #ed563a;
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+  /* margin-left: 5px; */
+  border-radius: 2px;
+}
+/* section 1 */
+.headertxt {
+  padding: 220px 0 220px 0;
+}
+
+.sec1P {
+  font-size: 16px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 52px;
+  font-weight: 900;
+  padding: 30px 0 26px 0;
+}
+/* article choose a program */
+h3 {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 20px;
+}
+.line-dec {
+  width: 46px;
+}
+.program-text {
+  line-height: 1.5;
+  padding: 20px;
+  margin-left: 100px;
+  width: 500px;
+  font-size: 12px;
+  color: #717070;
+}
+.card {
+  padding: 8px 0 8px 0;
+  text-align: start;
+  align-items: center;
+  width: 300px;
+}
+h4 {
+  font-size: 12px;
+  font-weight: 700;
+}
+.card img {
+  width: 60px;
+  padding: 10px;
+}
+.card-text {
+  line-height: 1.6;
+  padding: 4px 0 4px 0;
+  font-size: 8px;
+  color: #717070;
+}
+.btn2 {
+  padding-left: 0;
+  border: none;
+  font-size: 10px;
+  font-weight: 550;
+  background-color: white;
+}
+.card-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.blue {
+  text-decoration: none;
+  color: rgb(45, 45, 205);
+}
+/* section don't think begin today */
+.section2 {
+  background: url(assets/cta-bg.jpg);
+  text-align: center;
+  padding: 100px 0 100px 0;
+  margin-top: 50px;
+  /* width: 400px; */
+}
+h5 {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+}
+.section2-p {
+  word-spacing: 1.2px;
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 10px;
+  color: white;
+}
+.become-member {
+  width: 500px;
+  margin: 0 auto;
+}
+/* <!-- section Our classes  --> */
+.ourClasses-head {
+  width: 400px;
+  padding: 50px 0 10px 0;
+  margin: 0 auto;
+}
+.ourClasses-p {
+  color: #717070;
+  font-size: 14px;
+  margin: 16px 0 40px 0;
+}
+.ourClasses-card img {
+  width: 30px;
+}
+.ourClasses-card p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px;
+}
+.ourClasses-card {
+  align-items: center;
+  display: flex;
+  padding: 16px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0px 0px 0px 1px rgb(215, 215, 215);
+  /* box-shadow: 0px 1px 8px rgb(0, 0, 0.5); */
+  font-size: 20px;
+}
+.btn3 {
+  border: none;
+  width: 260px;
+  background-color: #ed563a;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 6px;
+}
+/* Our Classes article */
+.ourClasses {
+  padding-bottom: 100px;
+}
+
+.ourClasses-article-head {
+  font-weight: 700;
+  padding: 15px 0;
+}
+.ourClasses-article-p {
+  font-size: 12px;
+  color: #717070;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+.ourClasses-article {
+  text-align: start;
+}
+.ourClasses-article img {
+  width: 100%;
+  border-radius: 5px;
+}
+.ourClasses-article {
+  width: 400px;
+}
+
+/* <!-- section class Schedules --> */
+.section-schedules {
+  background: url(assets/schedule-bg.jpg);
+  padding: 20px 0 60px 0;
+}
+.class-schedules-p {
+  font-size: 10px;
+  word-spacing: 2px;
+  padding: 50px 0 25px 0;
+
+  color: white;
+}
+/* table  */
+table {
+  margin: 0 auto;
+}
+th,
+td {
+  width: 100px;
+  font-size: 10px;
+  padding: 20px;
+  color: white;
+  border: 1px solid white;
+}
+/* experttrainer article  */
+.experttrainer-artice-head {
+  padding: 10px;
+}
+.Trainer-card img {
+  width: 200px;
+}
+.Trainer-card-name {
+  padding-top: 10px;
+}
+.Trainer-card-text {
+  padding: 10px 0;
+  color: #717070;
+  font-size: 14px;
+  line-height: 1.5;
+  word-spacing: 1.5px;
+}
+.Trainer-cards {
+  padding: 50px 0;
+}
+.Trainer-card {
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0.5);
+  width: 200px;
+  padding: 20px;
+  text-align: start;
+}
+h6 {
+  font-weight: 600;
+  padding: 10px 0;
+}
+.Trainer-card-ul {
+  display: flex;
+}
+.Trainer-card-ul a {
+  color: blue;
+  font-size: 16px;
+}
+/* iframe part  */
+.contact-flex {
+  display: flex;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+}
+.flex input {
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.input-sub-mes {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.form-bg {
+  width: 50%;
+  background: url(assets/contact-bg.jpg);
+}
+form {
+  margin: 50px;
+  padding: 20px;
+}
+.form-btn {
+  width: 150px;
+  margin: 10px 0 10px 10px;
+  background-color: #ed563a;
+  font-weight: 600;
+  color: white;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+}
