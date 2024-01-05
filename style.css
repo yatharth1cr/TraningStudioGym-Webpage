@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -138,10 +137,25 @@ body {
 }
 .flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* header */
+header {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.headerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  object-fit: cover;
+}
+.container {
+  position: relative;
+}
 header {
   padding: 25px;
 }
@@ -156,7 +170,7 @@ h1 {
 video {
   width: 100%;
   box-shadow: rgb(0, 0, 0.5);
-  /* position: fixed; */
+  position: fixed;
 }
 .flex li {
   padding: 10px;
@@ -173,7 +187,6 @@ li a {
   color: white;
   font-size: 10px;
   padding: 10px;
-  /* margin-left: 5px; */
   border-radius: 2px;
 }
 /* section 1 */
@@ -202,9 +215,8 @@ h3 {
 }
 .program-text {
   line-height: 1.5;
-  padding: 20px;
-  margin-left: 100px;
-  width: 500px;
+  padding: 0 100px;
+  text-align: center;
   font-size: 12px;
   color: #717070;
 }
@@ -247,10 +259,10 @@ h4 {
 /* section don't think begin today */
 .section2 {
   background: url(assets/cta-bg.jpg);
+  width: 100%;
   text-align: center;
   padding: 100px 0 100px 0;
   margin-top: 50px;
-  /* width: 400px; */
 }
 h5 {
   font-size: 24px;
@@ -280,7 +292,7 @@ h5 {
   margin: 16px 0 40px 0;
 }
 .ourClasses-card img {
-  width: 30px;
+  width: 100%;
 }
 .ourClasses-card p {
   font-size: 16px;
@@ -294,7 +306,6 @@ h5 {
   border-radius: 5px;
   margin: 10px;
   box-shadow: 0px 0px 0px 1px rgb(215, 215, 215);
-  /* box-shadow: 0px 1px 8px rgb(0, 0, 0.5); */
   font-size: 20px;
 }
 .btn3 {
@@ -335,6 +346,7 @@ h5 {
 /* <!-- section class Schedules --> */
 .section-schedules {
   background: url(assets/schedule-bg.jpg);
+  width: 100%;
   padding: 20px 0 60px 0;
 }
 .class-schedules-p {
@@ -357,11 +369,18 @@ td {
   border: 1px solid white;
 }
 /* experttrainer article  */
+i.fa-brands {
+  margin-right: 10px;
+}
 .experttrainer-artice-head {
   padding: 10px;
 }
+.flex-trainer {
+  display: flex;
+  justify-content: space-evenly;
+}
 .Trainer-card img {
-  width: 200px;
+  width: 100%;
 }
 .Trainer-card-name {
   padding-top: 10px;
@@ -379,7 +398,7 @@ td {
 .Trainer-card {
   box-shadow: 0px 0px 10px 0px rgb(0, 0, 0.5);
   width: 200px;
-  padding: 20px;
+  padding: 16px;
   text-align: start;
 }
 h6 {
@@ -436,25 +455,67 @@ footer {
   text-align: center;
   padding: 25px;
 }
-/* CSS */
-header {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.1);
-}
 
-.headerVideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(12, 11, 11, 0.6), rgba(0, 0, 0, 0.6));
-  object-fit: cover;
-}
+/* Responsive page  */
 
-.container {
-  position: relative; /* Ensure the container stays on top of the video */
-  z-index: 1; /* Set a higher z-index to keep the content on top of the video */
+/* max-width 750px tablet view */
+@media screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+  .responsive-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-flex {
+    flex-direction: column;
+  }
+  .form-bg {
+    width: 100%;
+  }
+  .ourClasses-article {
+    margin: 30px 0;
+    width: 96%;
+  }
+  .headerVideo {
+    width: 100%;
+  }
+  .flex-trainer {
+    flex-direction: column;
+  }
+  .Trainer-cards {
+    width: 85%;
+  }
+  .Trainer-card {
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
+  }
+  .btn3 {
+    width: 96%;
+  }
 }
-
-/* Your existing styles for the header content */
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+  .container.flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerVideo {
+    height: 100%;
+  }
+  .Trainer-card {
+    width: 100%;
+    margin: 20px;
+  }
+  .flex-trainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  th,
+  td {
+    width: 40px;
+  }
+}

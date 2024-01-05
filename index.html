@@ -14,12 +14,13 @@
   </head>
   <body>
     <!-- header -->
-    <!-- header -->
     <header>
-      <video autoplay muted loop class="headerVideo">
-        <source src="assets/gym-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <figure>
+        <video autoplay muted loop class="headerVideo">
+          <source src="assets/gym-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </figure>
       <div class="container flex">
         <h1>TRAINING<span class="orange">STUDIO</span></h1>
         <!-- navigational links -->
@@ -50,9 +51,10 @@
         <button class="btn">BECOME A MEMBER</button>
       </div>
     </header>
+    <!-- main -->
     <main>
       <!-- section choose a program -->
-      <section class="container">
+      <section class="section-chooseprogram container">
         <h3>
           CHOOSE<span style="margin-left: 4px" class="orange">PROGRAM</span>
         </h3>
@@ -136,7 +138,7 @@
       <!-- section don't think begin today -->
       <section class="section2">
         <!-- become-member part  -->
-        <div class="become-member">
+        <div class="container become-member">
           <h5>
             DON'T
             <span class="orange">THINK</span>
@@ -155,7 +157,7 @@
       <!-- section our classes  -->
       <section class="container ourClasses">
         <!-- Our class head  -->
-        <div class="ourClasses-head">
+        <div class="container ourClasses-head">
           <h3>
             OUR<span style="margin-left: 4px" class="orange">CLASSES</span>
           </h3>
@@ -165,26 +167,34 @@
             veniam ullam dolor voluptates
           </p>
         </div>
-        <div class="flex">
+        <div class="flex responsive-flex">
           <!-- aside tag is used -->
-          <aside>
+          <aside class="container">
             <div class="ourClasses-card">
-              <img src="assets/tabs-first-icon.png" alt="tabs-first-icon" />
+              <figure>
+                <img src="assets/tabs-first-icon.png" alt="tabs-first-icon" />
+              </figure>
               <p class="orange">First Training Class</p>
             </div>
             <div class="ourClasses-card">
-              <img src="assets/tabs-first-icon.png" alt="tabs-first-icon" />
+              <figure>
+                <img src="assets/tabs-first-icon.png" alt="tabs-first-icon" />
+              </figure>
               <p>Second Training Class</p>
             </div>
             <div class="ourClasses-card">
-              <img src="assets/tabs-first-icon.png" alt="tabs-first-icon" />
+              <figure>
+                <img src="assets/tabs-first-icon.png" alt="tabs-first-icon" />
+              </figure>
               <p>Third Training Class</p>
             </div>
             <div class="ourClasses-card">
-              <img src="assets/tabs-first-icon.png" alt="tabs-first-icon" />
+              <figure>
+                <img src="assets/tabs-first-icon.png" alt="tabs-first-icon" />
+              </figure>
               <p>Fourth Training Class</p>
             </div>
-            <button class="btn3">View All Schedules</button>
+            <button class="ourClasses-card btn3">View All Schedules</button>
           </aside>
           <!-- Our class article  -->
           <article class="ourClasses-article">
@@ -204,7 +214,7 @@
       <!-- section class Schedules -->
       <section class="section-schedules">
         <!-- section Schedules head  -->
-        <div style="text-align: center" class="ourClasses-head">
+        <div style="text-align: center" class="container ourClasses-head">
           <h3 style="color: white">
             CLASSES<span style="margin-left: 4px" class="orange"
               >SCHEDULES</span
@@ -274,102 +284,114 @@
           </p>
         </div>
         <!-- Trainer card is wrapped in article tag -->
-        <article class="container flex Trainer-cards">
+        <article class="container flex-trainer Trainer-cards">
           <div class="Trainer-card">
-            <img src="assets/first-trainer.jpg" alt="first-trainer" />
-            <p class="orange Trainer-card-name">Strength Trainer</p>
-            <h6>Bret D. Bowers</h6>
-            <p class="Trainer-card-text">
-              Bret D. Bowers Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Tenetur labore esse placeat quas asperiores, et quae totam.
-              Numquam perferendis eius quidem,
-            </p>
-            <ul class="Trainer-card-ul">
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-              </li>
-            </ul>
+            <figure>
+              <img src="assets/first-trainer.jpg" alt="first-trainer" />
+            </figure>
+            <div>
+              <p class="orange Trainer-card-name">Strength Trainer</p>
+              <h6>Bret D. Bowers</h6>
+              <p class="Trainer-card-text">
+                Bret D. Bowers Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Tenetur labore esse placeat quas asperiores,
+                et quae totam. Numquam perferendis eius quidem,
+              </p>
+              <ul class="Trainer-card-ul">
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="Trainer-card">
-            <img src="assets/second-trainer.jpg" alt="first-trainer" />
-            <p class="orange Trainer-card-name">Strength Trainer</p>
-            <h6>Bret D. Bowers</h6>
-            <p class="Trainer-card-text">
-              Bret D. Bowers Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Tenetur labore esse placeat quas asperiores, et quae totam.
-              Numquam perferendis eius quidem,
-            </p>
-            <ul class="Trainer-card-ul">
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-              </li>
-            </ul>
+            <figure>
+              <img src="assets/second-trainer.jpg" alt="first-trainer" />
+            </figure>
+            <div>
+              <p class="orange Trainer-card-name">Strength Trainer</p>
+              <h6>Bret D. Bowers</h6>
+              <p class="Trainer-card-text">
+                Bret D. Bowers Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Tenetur labore esse placeat quas asperiores,
+                et quae totam. Numquam perferendis eius quidem,
+              </p>
+              <ul class="Trainer-card-ul">
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="Trainer-card">
-            <img src="assets/third-trainer.jpg" alt="first-trainer" />
-            <p class="orange Trainer-card-name">Strength Trainer</p>
-            <h6>Bret D. Bowers</h6>
-            <p class="Trainer-card-text">
-              Bret D. Bowers Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Tenetur labore esse placeat quas asperiores, et quae totam.
-              Numquam perferendis eius quidem,
-            </p>
-            <ul class="Trainer-card-ul">
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-              </li>
-            </ul>
+            <figure>
+              <img src="assets/third-trainer.jpg" alt="first-trainer" />
+            </figure>
+            <div>
+              <p class="orange Trainer-card-name">Strength Trainer</p>
+              <h6>Bret D. Bowers</h6>
+              <p class="Trainer-card-text">
+                Bret D. Bowers Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Tenetur labore esse placeat quas asperiores,
+                et quae totam. Numquam perferendis eius quidem,
+              </p>
+              <ul class="Trainer-card-ul">
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </article>
       </section>
@@ -379,7 +401,7 @@
         <div class="contact-flex">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18327128.192412484!2d81.8683779486405!3d23.118964057881385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1703834755597!5m2!1sen!2sin"
-            width="50%"
+            width="100%"
             height="450"
             style="border: 0"
             allowfullscreen=""
