@@ -455,7 +455,6 @@ footer {
   text-align: center;
   padding: 25px;
 }
-
 /* Responsive page  */
 
 /* max-width 750px tablet view */
@@ -493,7 +492,7 @@ footer {
   .btn3 {
     width: 96%;
   }
-}
+} 
 @media screen and (max-width: 700px) {
   .container {
     width: 90%;
